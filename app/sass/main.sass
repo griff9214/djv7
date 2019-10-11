@@ -1,0 +1,64 @@
+@import vars
+@import fonts
+@import libs
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent-color
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-size: $default-font-size
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	background-color: $dark
+.siteHeader
+	min-height: 700px
+	height: 100vh
+	background-size: cover
+	background-position: center center
+	background-color: $dark
+.topLine
+	position: absolute
+	width: 100%
+	padding-top: 40px
+.siteLogo
+  display: inline-block
+  margin-left: 45px
+  img
+	  width: 125px
+	  height: auto
+.phoneUrl
+  display: block
+  float: right
+  margin-right: 92px
+  color: #ffffff
+  font-size: 22px
+  font-family: firasans, sans-serif
+  text-decoration: none
+  &:hover
+    text-decoration: none
+    color: #fff
+  & .fas
+    color: #555555
+    margin-right: 5px
+    vertical-align: middle
+.menuLink
+  display: inline-block
+  float: right
+  margin-right: 16px
+  vertical-align: middle
+  font-size: 22px

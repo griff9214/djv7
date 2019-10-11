@@ -1,0 +1,8 @@
+/node_modules/
+/.git/
+/.idea/
+/**/Thumbs.db
+/**/*.DS_Store
+/app/libs/
+/app/css/
+/app/js/scripts.min.js
